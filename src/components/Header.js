@@ -38,6 +38,7 @@ const Header = (props) => (
 const mapStateToProps = state => ({
 	header: state.catalog.highlight,
 	section: state.catalog.section
+	title: state.catalog.title
 })
 
 const mapDispatchToProps = dispatch => ({
