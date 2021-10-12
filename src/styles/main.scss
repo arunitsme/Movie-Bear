@@ -1,0 +1,30 @@
+$primary: #001A26;
+$secondary: #EF810E;
+.primary {
+	color: $primary;
+}
+
+.secondary { 
+	color: $secondary;
+}
+
+html,body {
+	background-color: $primary;
+	background-image: url('/images/back.png');
+	overflow-x: hidden;
+	min-height: 100%;
+}
+
+p {
+	color: $secondary;
+}
+
+@import './Card.scss';
+@import './Header.scss';
+@import './Navbar.scss';
+@import './Catalog.scss';
+@import './About.scss';
+@import './Article.scss';
+@import './CastList.scss';
+@import './ErrorPage.scss';
+@import './RefetchButton.scss';
