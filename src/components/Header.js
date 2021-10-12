@@ -11,7 +11,7 @@ const Header = (props) => (
 					<div className="jumbotron jumbotron-fluid">					
 					  <div id="header" style={{backgroundPosition: "center", backgroundImage: "url('https://image.tmdb.org/t/p/w200" + props.header.backdrop_path + "')"}}></div>
 					  <div className="container" id="header_container">					  	
-					    <div className="row justify-content-center">
+					    <div className="row justify-content-flex-start">
 					    		<div className="header_shadow"></div>
 								<div className="col-12 col-lg-3">
 									<img 
@@ -38,6 +38,7 @@ const Header = (props) => (
 const mapStateToProps = state => ({
 	header: state.catalog.highlight,
 	section: state.catalog.section
+	title: state.catalog.title
 })
 
 const mapDispatchToProps = dispatch => ({
